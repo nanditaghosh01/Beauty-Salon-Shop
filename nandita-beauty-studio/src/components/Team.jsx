@@ -14,8 +14,8 @@ export default function Team() {
         <div className="team-grid">
           {team.map((member) => (
             <div className="team-card" key={member.id} data-reveal>
-              <div className="team-photo">
-                <img src={member.image} alt={`${member.name}, ${member.role} at Nandita Beauty Studio`} loading="lazy" />
+              <div className="team-avatar glass">
+                <span>{member.name.charAt(0)}</span>
               </div>
               <h3>{member.name}</h3>
               <div className="team-role">{member.role}</div>

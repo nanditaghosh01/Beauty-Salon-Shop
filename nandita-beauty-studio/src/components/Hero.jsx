@@ -23,7 +23,7 @@ export default function Hero() {
           <div className="hero-frame glass">
             <img
               ref={imgRef}
-              src="https://picsum.photos/seed/nbs-hero/900/1125"
+              src="https://content3.jdmagicbox.com/v2/comp/chandrapur/q6/9999p7172.7172.220103103512.l1q6/catalogue/glance-hair-and-beauty-salon-chandrapur-chandrapur-salons-n8x7r250pe.jpg"
               alt="A client relaxing during a beauty treatment at Nandita Beauty Studio"
               loading="eager"
             />

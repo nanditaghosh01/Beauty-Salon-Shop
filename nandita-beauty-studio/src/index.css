@@ -519,8 +519,8 @@ select:focus-visible {
   flex-direction: column;
 }
 .service-card:hover { transform: translateY(-6px); box-shadow: 0 24px 50px rgba(139,74,84,0.14); }
-.service-card-media { position: relative; aspect-ratio: 4/3; overflow: hidden; }
-.service-card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-soft); }
+.service-card-media { position: relative; aspect-ratio: 3/4; overflow: hidden; }
+.service-card-media img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform 0.6s var(--ease-soft); }
 .service-card:hover .service-card-media img { transform: scale(1.06); }
 .service-badge {
   position: absolute; top: 12px; left: 12px;
@@ -617,7 +617,7 @@ select:focus-visible {
 .gallery-filter-btn.active { background: var(--accent); color: var(--color-ivory); border-color: var(--accent); }
 
 .gallery-masonry {
-  columns: 4 240px;
+  columns: 4 260px;
   column-gap: 16px;
 }
 .gallery-item {
@@ -628,7 +628,12 @@ select:focus-visible {
   overflow: hidden;
   cursor: pointer;
 }
-.gallery-item img { width: 100%; display: block; transition: transform 0.5s var(--ease-soft); }
+.gallery-item img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.5s var(--ease-soft);
+}
 .gallery-item:hover img { transform: scale(1.05); }
 .gallery-caption {
   position: absolute; inset: auto 0 0 0;
@@ -644,7 +649,7 @@ select:focus-visible {
 .gallery-caption span { font-size: 0.72rem; opacity: 0.8; }
 
 @media (max-width: 767px) {
-  .gallery-masonry { columns: 2 160px; }
+  .gallery-masonry { grid-template-columns: repeat(2, 1fr); }
   .gallery-item:hover .gallery-caption { opacity: 1; }
 }
 
@@ -709,9 +714,22 @@ select:focus-visible {
 
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .team-card { text-align: center; }
-.team-photo { border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/5; margin-bottom: 16px; position: relative; }
-.team-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease-soft); }
-.team-card:hover .team-photo img { transform: scale(1.05); }
+.team-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s var(--ease-soft);
+}
+.team-avatar span {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--accent);
+}
+.team-card:hover .team-avatar { transform: scale(1.06); }
 .team-card h3 { font-size: 1.15rem; }
 .team-role { color: var(--accent); font-size: 0.85rem; font-weight: 600; margin: 4px 0; }
 .team-exp { font-size: 0.78rem; color: var(--text-soft); }

@@ -67,8 +67,8 @@ export default function Footer() {
         <div className="footer-bottom">
           <span>© 2026 Nandita Ghosh. All Rights Reserved.</span>
           <div style={{ display: 'flex', gap: 16 }}>
-            <a href="https://github.com/nanditaghosh" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/nanditaghosh" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/nanditaghosh01" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/nandita-ghosh-828a96327/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>

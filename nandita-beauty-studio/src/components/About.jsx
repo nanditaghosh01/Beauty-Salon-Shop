@@ -48,7 +48,7 @@ export default function About() {
     <section id="about" ref={containerRef}>
       <div className="container about-grid">
         <div className="about-image" data-reveal>
-          <img src="https://picsum.photos/seed/nbs-about/700/900" alt="Interior of Nandita Beauty Studio" loading="lazy" />
+          <img src="https://images.fresha.com/locations/location-profile-images/460688/2096090/8c1689b2-a5cd-4f5b-b2b8-d19c397984d3-GlitzyBeautySalonSpa-MV-Mal-Fresha.jpg?class=venue-gallery-large&f_width=1200&f_quality=75" alt="Interior of Nandita Beauty Studio" loading="lazy" />
         </div>
         <div data-reveal>
           <span className="eyebrow">A little about us</span>
