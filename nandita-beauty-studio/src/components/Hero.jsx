@@ -9,7 +9,7 @@ export default function Hero() {
     <section id="home" className="hero">
       <div className="container hero-grid">
         <div className="hero-copy" data-reveal>
-          
+          <span className="eyebrow">Nandita Beauty Studio</span>
           <h1>Beauty Beyond Imagination</h1>
           <p className="lead">
             Personalized beauty, thoughtful care, and a little time just for you.
