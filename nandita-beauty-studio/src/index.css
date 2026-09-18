@@ -390,7 +390,7 @@ select:focus-visible {
   display: block;
 }
 .mark {
-  font-size: 32px;
+  font-size: 64px;
 }
 
 @media (max-width: 900px) {
