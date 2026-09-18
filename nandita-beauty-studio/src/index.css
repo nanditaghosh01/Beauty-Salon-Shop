@@ -305,7 +305,7 @@ select:focus-visible {
   align-items: center;
   gap: 8px;
 }
-.navbar-logo .mark { color: var(--accent); font-size: 1.3rem; }
+.navbar-logo .mark { color: var(--accent); font-size: 32px; }
 
 .navbar-links {
   display: flex;
@@ -389,9 +389,7 @@ select:focus-visible {
   padding: 10px 0;
   display: block;
 }
-.mark {
-  font-size: 64px;
-}
+
 
 @media (max-width: 900px) {
   .navbar-links { display: none; }
