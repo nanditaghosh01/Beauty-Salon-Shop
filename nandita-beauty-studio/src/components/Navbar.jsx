@@ -47,7 +47,7 @@ export default function Navbar() {
     <>
       <nav className={`navbar glass glass-strong ${scrolled ? 'scrolled' : ''}`}>
         <a href="#home" className="navbar-logo">
-          <span className="mark">✿</span> Nandita Beauty Studio
+          <span className="mark">✿</span>
         </a>
         <ul className="navbar-links">
           {LINKS.map((link) => (
