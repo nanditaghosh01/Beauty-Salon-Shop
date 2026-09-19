@@ -254,26 +254,6 @@ select:focus-visible {
   transform: scaleX(0);
 }
 
-/* ==========================================================================
-   CURSOR GLOW (desktop only)
-   ========================================================================== */
-
-.cursor-glow {
-  position: fixed;
-  top: 0; left: 0;
-  width: 28px; height: 28px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(139,74,84,0.35), transparent 70%);
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: width 0.3s var(--ease-soft), height 0.3s var(--ease-soft), opacity 0.3s ease;
-}
-.cursor-glow.expand { width: 64px; height: 64px; }
-
-@media (pointer: coarse) {
-  .cursor-glow { display: none; }
-}
 
 /* ==========================================================================
    NAVBAR

@@ -17,7 +17,6 @@ import Booking from './components/Booking.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import ScrollProgress from './components/ScrollProgress.jsx'
-import CursorGlow from './components/CursorGlow.jsx'
 import BackToTop from './components/BackToTop.jsx'
 import WhatsAppButton from './components/WhatsAppButton.jsx'
 
@@ -56,7 +55,6 @@ export default function App() {
         <div className="aurora-orb three" />
       </div>
       <ScrollProgress />
-      <CursorGlow />
       <Navbar />
       <main>
         <Hero />
