@@ -303,7 +303,7 @@ select:focus-visible {
   color: var(--text);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
 }
 .navbar-logo .mark { color: var(--accent); font-size: 40px; }
 
