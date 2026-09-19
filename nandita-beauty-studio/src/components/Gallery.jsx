@@ -1,8 +1,37 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { X } from 'lucide-react'
 import { galleryItems, galleryCategories } from '../data/gallery.js'
 import { useScrollAnimation } from '../hooks/useScrollAnimation.js'
+function LazyImage({ src, alt }) {
+  const imgRef = useRef(null)
+  const [loaded, setLoaded] = useState(false)
 
+  useEffect(() => {
+    const el = imgRef.current
+    if (!el) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.src = src
+          observer.unobserve(el)
+        }
+      },
+      { rootMargin: '150px 0px', threshold: 0.01 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [src])
+
+  return (
+    <img
+      ref={imgRef}
+      alt={alt}
+      className={`lazy-img${loaded ? ' loaded' : ''}`}
+      onLoad={() => setLoaded(true)}
+    />
+  )
+}
 export default function Gallery() {
   const containerRef = useScrollAnimation([])
   const [filter, setFilter] = useState('All')
@@ -40,7 +69,7 @@ export default function Gallery() {
               onKeyDown={(e) => { if (e.key === 'Enter') setLightboxItem(item) }}
               aria-label={`View ${item.title}`}
             >
-              <img src={item.image} alt={`${item.title} — Nandita Beauty Studio`} loading="lazy" />
+              <LazyImage src={item.image} alt={`${item.title} — Nandita Beauty Studio`} />
               <div className="gallery-caption">
                 <strong>{item.title}</strong>
                 <span>Nandita Beauty Studio</span>
