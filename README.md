@@ -6,24 +6,6 @@ A responsive, high-end, glassmorphism-styled web application built for a boutiqu
 
 ---
 
-## 📑 Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation & Setup](#installation--setup)
-  - [Running the Frontend](#running-the-frontend)
-  - [Running the Backend Server](#running-the-backend-server)
-- [Backend REST API](#backend-rest-api)
-- [Customizing Studio Data](#customizing-studio-data)
-- [Design & Accessibility](#design--accessibility)
-- [Production Build & Deployment](#production-build--deployment)
-- [License](#license)
-
----
-
 ## 🌟 Overview
 
 **Nandita Beauty Studio** is crafted to provide a warm, premium digital experience for salon clients. Designed with soft layered glassmorphism, floating aurora gradient orbs, and luxury editorial typography, the site allows visitors to explore salon treatments, browse portfolio looks, compare transformation results, consult on styles for special occasions, and book appointments online.
